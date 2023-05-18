@@ -1,0 +1,279 @@
+{
+  "sessions": [
+    {
+      "id": "328160853:328160853",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "1045197215:1045197215",
+      "data": {
+        "__scenes": {
+          "current": "OrdersViewScene",
+          "state": {}
+        }
+      }
+    },
+    {
+      "id": "245517275:245517275",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "815184787:815184787",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "-1001725354213:815184787",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "-1001506846781:328160853",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "574054658:574054658",
+      "data": {
+        "__scenes": {
+          "current": "paymentScene",
+          "state": {}
+        }
+      }
+    },
+    {
+      "id": "-1001692202621:815184787",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "1180216823:1180216823",
+      "data": {
+        "__scenes": {
+          "current": "listScene",
+          "state": {}
+        }
+      }
+    },
+    {
+      "id": "5274430224:5274430224",
+      "data": {
+        "__scenes": {
+          "current": "recordScene",
+          "state": {}
+        }
+      }
+    },
+    {
+      "id": "525366016:525366016",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "-736065574:328160853",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "-1001603467189:328160853",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "-1001603467189:136817688",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "-1001505991667:328160853",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "5357426465:5357426465",
+      "data": {
+        "__scenes": {
+          "current": "ProductsViewScene",
+          "state": {
+            "is_club_member": true,
+            "currentBrand": "1455",
+            "currentProductCnt": 1,
+            "productsList": [
+              {
+                "index": 0,
+                "id": 479
+              },
+              {
+                "index": 1,
+                "id": 480
+              },
+              {
+                "index": 2,
+                "id": 481
+              },
+              {
+                "index": 3,
+                "id": 482
+              },
+              {
+                "index": 4,
+                "id": 483
+              },
+              {
+                "index": 5,
+                "id": 484
+              },
+              {
+                "index": 6,
+                "id": 485
+              },
+              {
+                "index": 7,
+                "id": 486
+              },
+              {
+                "index": 8,
+                "id": 487
+              },
+              {
+                "index": 9,
+                "id": 488
+              },
+              {
+                "index": 10,
+                "id": 489
+              }
+            ],
+            "orderedProduct": {
+              "id": 480,
+              "article": "Ba00002",
+              "name": "",
+              "brand_id": 1455,
+              "collection_id": null,
+              "price": 4400,
+              "discount": null,
+              "is_active": true,
+              "link": "",
+              "description": "Натуральная кожа, текстиль, резина",
+              "picture": "https://lh3.googleusercontent.com/ozMsSavqmBBwvtflKZjDh8ijXwG1wU6Lww9ltKr1jK8s1L5UXVXEQULar7e5905UVT1x8BZIQ4fSZu1_SV68P57xNlgmporPamIQAXPX8Mhh9dg1m6JmCa2w-oZfmJPuBeLQeWSO-JEVMAhdF0QxQqM",
+              "createdAt": "2022-09-04T21:50:07.000Z",
+              "updatedAt": "2022-09-04T21:50:07.000Z",
+              "sizes": [
+                {
+                  "id": 19,
+                  "size": 42,
+                  "createdAt": "2022-09-03T11:12:02.000Z",
+                  "updatedAt": "2022-09-03T11:12:02.000Z",
+                  "ProductSizes": {
+                    "id": 2418,
+                    "size_id": 19,
+                    "product_id": 480,
+                    "count": 1,
+                    "createdAt": "2022-09-04T21:50:07.000Z",
+                    "updatedAt": "2022-09-04T21:50:07.000Z"
+                  }
+                },
+                {
+                  "id": 20,
+                  "size": 43,
+                  "createdAt": "2022-09-03T11:12:02.000Z",
+                  "updatedAt": "2022-09-03T11:12:02.000Z",
+                  "ProductSizes": {
+                    "id": 2419,
+                    "size_id": 20,
+                    "product_id": 480,
+                    "count": 1,
+                    "createdAt": "2022-09-04T21:50:07.000Z",
+                    "updatedAt": "2022-09-04T21:50:07.000Z"
+                  }
+                },
+                {
+                  "id": 21,
+                  "size": 44,
+                  "createdAt": "2022-09-03T11:12:02.000Z",
+                  "updatedAt": "2022-09-03T11:12:02.000Z",
+                  "ProductSizes": {
+                    "id": 2420,
+                    "size_id": 21,
+                    "product_id": 480,
+                    "count": 2,
+                    "createdAt": "2022-09-04T21:50:07.000Z",
+                    "updatedAt": "2022-09-04T21:50:07.000Z"
+                  }
+                }
+              ],
+              "brand": {
+                "id": 1455,
+                "name": "BALENCIAGA",
+                "alias": "balenciaga",
+                "is_active": true,
+                "createdAt": "2022-09-02T20:14:36.000Z",
+                "updatedAt": "2022-09-02T20:14:36.000Z"
+              }
+            },
+            "sizes": [
+              42,
+              43,
+              44
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "-546583865:328160853",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "378339431:378339431",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "1075093495:1075093495",
+      "data": {
+        "__scenes": {
+          "current": "listScene",
+          "state": {}
+        }
+      }
+    },
+    {
+      "id": "839873427:839873427",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "1101737522:1101737522",
+      "data": {
+        "__scenes": {
+          "current": "listScene",
+          "state": {}
+        }
+      }
+    },
+    {
+      "id": "756347536:756347536",
+      "data": {
+        "__scenes": {}
+      }
+    }
+  ]
+}
