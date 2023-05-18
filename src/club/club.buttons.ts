@@ -48,14 +48,24 @@ export class ClubButtons {
     )
   }
 
-  recordsListButtons(list) {
+  recordsListButtons(list, showPrev = false, showNext = false) {
+    const pagination = [];
+    if (showPrev) {
+      pagination.push({ text: this.i18n.t("dict.prev_page"), callback_data: "to_prev", });
+    }
+    if (showNext) {
+      pagination.push({ text: this.i18n.t("dict.next_page"), callback_data: "to_next", });
+    }
     return {
       reply_markup: JSON.stringify({
         inline_keyboard: [
           ...list.map((item, index) => ([{
-            text: `🗒️ ${index + 1}: ${truncate(item.text, 24)}`,
+            text: `🗒️ ${item.id}: ${truncate(item.text, 24)}`,
             callback_data: `show_record_${item.id}`,
           }])),
+          [
+            ...pagination,
+          ],
           [{ text: this.i18n.t("dict.to_start"), callback_data: "to_start", }]
         ]
       })

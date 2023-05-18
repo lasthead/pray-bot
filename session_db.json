@@ -3,7 +3,10 @@
     {
       "id": "328160853:328160853",
       "data": {
-        "__scenes": {}
+        "__scenes": {
+          "current": "recordScene",
+          "state": {}
+        }
       }
     },
     {

@@ -91,19 +91,30 @@ export class ListScene {
     @InjectModel(UserModel) private userService: Repository<UserModel>,
   ) {}
 
-  async showList(ctx) {
+  currentPage: number = 0;
+  limitPage: number = 15;
 
-    const isAdmin = await isUserAdmin(ctx, this.users);
-    const chat_id = ctx.update.callback_query.message.chat.id;
-    const params = isAdmin ? {} : { where: { chat_id } };
-    const list = await RecordModel.findAll(params);
+  async showList(ctx) {
     try {
+      const isAdmin = await isUserAdmin(ctx, this.users);
+      const chat_id = ctx.update.callback_query.message.chat.id;
+      console.log(this.limitPage * this.currentPage, this.limitPage);
+
+      const params = isAdmin
+        ? { offset: this.limitPage * this.currentPage, limit: this.limitPage }
+        : { where: { chat_id } };
+      const list = await RecordModel.findAll(params);
+      const count = await RecordModel.count(isAdmin ? {} : { where: { chat_id } });
+      const showPrev = this.currentPage > 0;
+      const showNext = count > this.limitPage && count > this.limitPage * (this.currentPage + 1);
+
       await updateMessage(
         ctx,
         this.i18n.t('dict.list'),
-        this.appButtons.recordsListButtons(list)
+        this.appButtons.recordsListButtons(list, showPrev, showNext)
       )
     } catch (e) {
+      console.log(e, 'showlist');
     }
   }
 
@@ -123,6 +134,20 @@ export class ListScene {
     } catch (e) {
       console.error(e);
     }
+  }
+
+  @Action("to_prev")
+  async showPrevPage(ctx) {
+    if (this.currentPage > 0) {
+      this.currentPage = this.currentPage - 1;
+    }
+    await this.showList(ctx);
+  }
+
+  @Action("to_next")
+  async showNextPage(ctx) {
+    this.currentPage = this.currentPage + 1;
+    await this.showList(ctx);
   }
 
   @Action(/^remove-(\d+)$/)
