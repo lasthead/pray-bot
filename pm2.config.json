@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "app-dist-prod",
+      "name": "pray-bot-dist-prod",
       "script": "./dist/main.js",
       "args" : "start",
       "watch": true,
