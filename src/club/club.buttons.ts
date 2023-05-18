@@ -53,7 +53,7 @@ export class ClubButtons {
       reply_markup: JSON.stringify({
         inline_keyboard: [
           ...list.map((item, index) => ([{
-            text: `🗒️ ${index + 1}: ${truncate(item.text, 14)}`,
+            text: `🗒️ ${index + 1}: ${truncate(item.text, 24)}`,
             callback_data: `show_record_${item.id}`,
           }])),
           [{ text: this.i18n.t("dict.to_start"), callback_data: "to_start", }]
